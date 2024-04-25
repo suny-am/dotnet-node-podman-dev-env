@@ -1,0 +1,22 @@
+{
+    "name": "Space Story API",
+    "dockerComposeFile": "../../docker-compose.yaml",
+    "service": "api",
+    "workspaceFolder": "/Workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            },
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "ms-dotnettools.vscodeintellicode-csharp"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/dotnet:2": {
+            "version": "latest"
+        }
+    }
+}
