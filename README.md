@@ -1,29 +1,7 @@
-# Space VN/RPG
+# .NET/Node Podman Development Template
 
-## What is this?
-
-A web based game using C#/.NET, Vue and WebGPU
-
-## Todo
-
-### API
-
-- [] SQLite Connection (+ maybe PostgreSQL)
-- [] Entitites
-- [] Repositories
-- [] Migrations
-- [] Tests
-- [] Controllers
-
-### Client
-
-- [] Layout
-- [] Components
-- [] Views
-- [] Routing
-- [] Pinia states
-- [] WebGPU
-
+## Description
+A template starter for creating an application stack using node, .NET and PostgreSQL
 
 ## Contact
 [visualarea.1@gmail.com](mailto:visualarea.1@gmail.com)
