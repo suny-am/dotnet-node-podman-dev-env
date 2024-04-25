@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   client:
-    build: 
+    build:
       dockerfile: ./Client/Dockerfile
     environment:
       - HOME=/home/node
@@ -13,14 +13,16 @@ services:
       - development
 
   api:
-    build: 
+    build:
       dockerfile: ./API/Dockerfile
+    working_dir: /Workspace
+    user: vscode
     environment:
-      HOME: /home/vscode
-      DOTNET_ENVIRONMENT: Development
+      - HOME=/home/vscode
+      - DOTNET_ENVIRONMENT=Development
     command: tail -f /dev/null
     volumes:
-      - ./API/:/Workspace
+      - ./API:/Workspace
     networks:
       - development
 
